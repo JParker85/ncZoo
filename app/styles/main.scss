@@ -2,7 +2,7 @@
 @import '../../bower_components/bourbon/dist/bourbon';
 @import '../../bower_components/bitters/app/assets/stylesheets/base';
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
-
+@import url(http://fonts.googleapis.com/css?family=Allerta+Stencil);
 $blue: #0A8FD5;
 $green: #27AE60;
 $red: #E74C3C;
@@ -11,11 +11,12 @@ $red: #E74C3C;
 // Custom Styles
 body {
   background: #fafafa;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Allerta Stencil', sans-serif;
   color: #333;
 }
 
 .container {
+  font-family: 'Allerta Stencil', sans-serif;
   width: 965px;
   margin: auto;
   overflow: hidden;
@@ -24,13 +25,16 @@ body {
 
 header{
   background-color:$green;
+  font-family: 'Allerta Stencil', sans-serif;
   height:100px;
   h1{
+    font-family: 'Allerta Stencil', sans-serif;
     margin-top:40px;
     margin-bottom:40px;
-    font-size: 50px;
+    font-size: 40px;
   }
   .nav {
+    font-family: 'Allerta Stencil', sans-serif;
     float:right;
     margin-top:0;
   }
@@ -38,6 +42,7 @@ header{
 aside{
   @include span-columns(3);
   float:left;
+  font-family: 'Allerta Stencil', sans-serif;
   background-color:$red;
   .map{
     height: 170px;
@@ -62,4 +67,17 @@ article{
     display:block;
     float:right;
   }
+}
+
+
+.blue{
+  background-color:$blue
+}
+
+.green{
+  background-color:$green
+}
+
+.red{
+  background-color:$red
 }
